@@ -1,17 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="/style.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/home.css' rel='stylesheet'><link href='https://unpkg.com/css.gg@2.0.0/icons/css/search.css' rel='stylesheet'><link href='https://unpkg.com/css.gg@2.0.0/icons/css/math-plus.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/stack.css' rel='stylesheet'>
+    <script src="/script.js"></script>
 </head>
+
 <body>
     <div class="nav">
-        <a href="#">Home</a>
-        <a href="#">Search</a>
-        <a href="#">Your library</a>
+        <div id="top-nav">
+            <a href="#"><i class="gg-home"></i><pre>  Home</pre></a>
+            <a href="#"><i class="gg-search"></i><pre>   Search</pre></a>
+        </div>
+        <div id="lib-nav">
+            <a href="#"><i class="gg-stack"></i><pre>  Your library</pre></a>
+            <i class="gg-math-plus" id="plus"></i>
+        </div>
+    </div>
+    <div class="stuff">
+
+        <audio class="music" src="music/I_have_no_enemies.mpeg" controls>I have no enemies</audio>
+        <audio class="music" src="music/nier_1.mpeg" controls>nier 1</audio>
+        <audio class="music" src="music/nier_2.mpeg" controls>nier 2</audio>
+        <audio class="music" src="music/nier_3.mpeg" controls>nier 3</audio>
+        <audio class="music" src="music/emils_shop.mpeg" controls>Emil's Shop</audio>
     </div>
 </body>
+
 </html>
