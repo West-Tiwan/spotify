@@ -67,7 +67,8 @@ i {
     overflow: scroll;
     overflow-x: hidden;
 }
-#lib_title{
+
+#lib_title {
     grid-column: 1/span 2;
     height: max-content;
     padding: 20px 0px 0px 10px;
@@ -75,9 +76,10 @@ i {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 7fr;
     position: sticky;
-    top:0px;
+    top: 0px;
     background-color: #141414;
 }
+
 .small_album {
     width: auto;
     grid-column: 1/span 2;
@@ -123,10 +125,12 @@ i {
 #album_cover {
     height: 38vh;
 }
-#album_cover:hover{
+
+#album_cover:hover {
     transform: scale(1.01);
     transition-duration: 0.5s;
 }
+
 #playlist {
     width: auto;
     height: auto;
@@ -163,6 +167,20 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
 }
-.current_info{
+
+.current_info {
     width: auto;
+}
+
+.current_info_player {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+button{
+    background-color: #141414;
+    border: none;
 }

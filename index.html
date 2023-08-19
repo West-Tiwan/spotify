@@ -10,6 +10,9 @@
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/search.css' rel='stylesheet'>
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/math-plus.css' rel='stylesheet'>
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/stack.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/play-track-next-o.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/play-pause-o.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/play-track-prev-o.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -25,6 +28,30 @@
                 <div id="lib_title">
                     <a href="#"><i class="gg-stack"></i></a>
                     <a href="#">Your library</a>
+                </div>
+                <div class="small_album">
+                    <img src="music/nier_cover.jpeg" class="small_album_img">
+                    <h5>Nier:Automata Original Soundtrack</h5>
+                </div>
+                <div class="small_album">
+                    <img src="music/nier_cover.jpeg" class="small_album_img">
+                    <h5>Nier:Automata Original Soundtrack</h5>
+                </div>
+                <div class="small_album">
+                    <img src="music/nier_cover.jpeg" class="small_album_img">
+                    <h5>Nier:Automata Original Soundtrack</h5>
+                </div>
+                <div class="small_album">
+                    <img src="music/nier_cover.jpeg" class="small_album_img">
+                    <h5>Nier:Automata Original Soundtrack</h5>
+                </div>
+                <div class="small_album">
+                    <img src="music/nier_cover.jpeg" class="small_album_img">
+                    <h5>Nier:Automata Original Soundtrack</h5>
+                </div>
+                <div class="small_album">
+                    <img src="music/nier_cover.jpeg" class="small_album_img">
+                    <h5>Nier:Automata Original Soundtrack</h5>
                 </div>
                 <div class="small_album">
                     <img src="music/nier_cover.jpeg" class="small_album_img">
@@ -86,7 +113,7 @@
     </div>
     <div id="bottom_player">
         <div class="current_info_name current_info"></div>
-        <div class="current_info_player current_info"></div>
+        <div class="current_info_player current_info"><button onclick="change_song_button_backward()"><i class="gg-play-track-prev-o"></i></button><i class="gg-play-pause-o"></i><button onclick="change_song_button_forward()"><i class="gg-play-track-next-o"></i></button></div>
         <div class="current_info_volume current_info"></div>
     </div>
     <script src="script.js"></script>
