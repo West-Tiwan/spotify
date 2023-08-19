@@ -30,12 +30,10 @@ i {
 }
 
 .gg-home {
-    top: 5px;
     left: 2px;
 }
 
 .gg-search {
-    top: 5px;
     left: 6px;
 }
 
@@ -56,6 +54,7 @@ i {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 7fr;
     margin-bottom: 10px;
+    align-items: center;
 }
 
 #lib-nav {
@@ -166,5 +165,4 @@ body {
 }
 .current_info{
     width: auto;
-    background-color: #555;
 }
