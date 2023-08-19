@@ -124,7 +124,10 @@ i {
 #album_cover {
     height: 38vh;
 }
-
+#album_cover:hover{
+    transform: scale(1.01);
+    transition-duration: 0.5s;
+}
 #playlist {
     width: auto;
     height: auto;
