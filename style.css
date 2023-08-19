@@ -1,0 +1,167 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+i {
+    position: relative;
+}
+
+.gg-home {
+    top: 5px;
+    left: 2px;
+}
+
+.gg-search {
+    top: 5px;
+    left: 6px;
+}
+
+.nav {
+    background-color: black;
+    display: grid;
+    grid-template-rows: 1fr 7fr;
+    height: 90vh;
+    padding: 10px;
+}
+
+#top-nav {
+    background-color: rgba(100, 100, 100, 0.2);
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 7fr;
+    margin-bottom: 10px;
+}
+
+#lib-nav {
+    background-color: #64646433;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: repeat(auto, 1fr);
+    row-gap: 15px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+#lib_title{
+    grid-column: 1/span 2;
+    height: max-content;
+    padding: 20px 0px 0px 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 7fr;
+    position: sticky;
+    top:0px;
+    background-color: #141414;
+}
+.small_album {
+    width: auto;
+    grid-column: 1/span 2;
+    display: flex;
+    margin-left: 10px;
+}
+
+.small_album_img {
+    height: 50px;
+    display: inline-block;
+    padding-right: 4px;
+}
+
+.stuff {
+    height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(100, 100, 100, 0.2), rgb(71, 94, 74));
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+#album_title {
+    display: flex;
+}
+
+.titile {
+    padding-left: 10px;
+    align-self: flex-end;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+#prod {
+    font-size: 20px;
+}
+
+.prod {
+    align-self: flex-end;
+}
+
+#album_cover {
+    height: 38vh;
+}
+
+#playlist {
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    background-image: linear-gradient(rgba(100, 100, 100, 0.2), transparent);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+#moving {
+    height: auto;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background-color: black;
+    padding-right: 10px;
+}
+
+#bottom_player {
+    background-color: black;
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    bottom: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.current_info{
+    width: auto;
+    background-color: #555;
+}
