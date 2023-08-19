@@ -19,6 +19,7 @@ var current_song = songs[index];
 
 function update_playelist(){
     var playlist = ``;
+    
     for (let i = 0; i < songs.length; i++) {
         playlist += `<div style="display:grid;grid-template-columns:1fr 19fr 3fr;font-size:25px;padding-left:20px;padding-top:20px;"><p>${i+1}</p><p>${songs[i].song_name}</p><p>${songs[i].length_of_song} seconds</p></div>`;
     }
@@ -28,15 +29,22 @@ function update_playelist(){
 const current_playing_name = document.querySelector(".current_info_name");
 
 function change_song_button_forward(){
-    index=(index+1)%(songs.lenth);
+    index=(index+1)%(songs.length);
     current_song_name();
 }
 function change_song_button_backward(){
-    index=(index-1)%(songs.lenth);
+    index=(index-1+songs.length)%(songs.length);
     current_song_name();
+    
 }
 function current_song_name() {
-    current_playing_name.innerHTML = `<div style="display:flex;align-items:center;height:10vh"><img style="height:8vh;border-radius:10px;margin-right:10px" src=${current_song.cover}><div style="display: flex;flex-direction: column;flex-wrap: wrap;justify-content: space-evenly;height:8vh"><p>${current_song.song_name}</p><p>${current_song.producer_name}</p></div></div>`;
+    var current_song = songs[index];
+
+    document.getElementById("currImage").src=current_song.cover;
+    document.getElementById("currSong").innerText=current_song.song_name;
+    document.getElementById("currProd").innerText=current_song.producer_name;
+
+
 }
 current_song_name();
 update_playelist();

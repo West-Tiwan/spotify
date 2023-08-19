@@ -180,6 +180,25 @@ body {
     flex-wrap: wrap;
 }
 
+#currImage{
+    height:8vh;
+    border-radius:10px;
+    margin-right:10px;
+}
+#currData{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height:8vh;
+}
+.current_info_name{
+   display:flex;
+   align-items:center;
+   height:10vh;
+   margin-left:10px;
+}
+
 button{
     background-color: #141414;
     border: none;

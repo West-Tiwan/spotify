@@ -112,8 +112,16 @@
         </div>
     </div>
     <div id="bottom_player">
-        <div class="current_info_name current_info"></div>
-        <div class="current_info_player current_info"><button onclick="change_song_button_backward()"><i class="gg-play-track-prev-o"></i></button><i class="gg-play-pause-o"></i><button onclick="change_song_button_forward()"><i class="gg-play-track-next-o"></i></button></div>
+        <div class="current_info_name current_info">
+            <img id="currImage" src="">
+            <div id="currData">
+                <p id="currSong">XYZ</p>
+                <p id="currProd">xyz</p>
+            </div>
+        </div>
+        <div class="current_info_player current_info"><button onclick="change_song_button_backward()"><i
+                    class="gg-play-track-prev-o"></i></button><i class="gg-play-pause-o"></i><button
+                onclick="change_song_button_forward()"><i class="gg-play-track-next-o"></i></button></div>
         <div class="current_info_volume current_info"></div>
     </div>
     <script src="script.js"></script>
