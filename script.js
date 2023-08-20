@@ -21,7 +21,7 @@ function update_playelist(){
     var playlist = ``;
     
     for (let i = 0; i < songs.length; i++) {
-        playlist += `<div style="display:grid;grid-template-columns:1fr 19fr 3fr;font-size:25px;padding-left:20px;padding-top:20px;"><p>${i+1}</p><p>${songs[i].song_name}</p><p>${songs[i].length_of_song} seconds</p></div>`;
+        playlist += `<p>${i+1}</p><p>${songs[i].song_name}</p><p>${songs[i].length_of_song} seconds</p>`;
     }
     document.querySelector("#playlist").innerHTML = playlist;
 }
