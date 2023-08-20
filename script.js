@@ -8,10 +8,10 @@ class song_info {
     }
 }
 
-const nier_1 = new song_info("Voice of no return", "Square Enix", "Peacefull", 231, "/music/nier_1", "/music/nier_cover.jpeg");
-const nier_2 = new song_info("Weight of the world", "Square Enix", "Peacefull", 365, "/music/nier_2", "/music/nier_cover.jpeg");
-const nier_3 = new song_info("Sound of the end", "Square Enix", "Peacefull", 347, "/music/nier_3", "/music/nier_cover.jpeg");
-const emils_shop = new song_info("emil's shop", "Square Enix", "Peacefull", 351, "/music/emils_shop", '/music/nier_cover.jpeg');
+const nier_1 = new song_info("Voice of no return", "Square Enix", "Peacefull", 231, "music/nier_1", "music/nier_cover.jpeg");
+const nier_2 = new song_info("Weight of the world", "Square Enix", "Peacefull", 365, "music/nier_2", "music/nier_cover.jpeg");
+const nier_3 = new song_info("Sound of the end", "Square Enix", "Peacefull", 347, "music/nier_3", "music/nier_cover.jpeg");
+const emils_shop = new song_info("Emil's shop", "Square Enix", "Peacefull", 351, "music/emils_shop", "music/nier_cover.jpeg");
 var songs = [nier_1, nier_2, nier_3, emils_shop];
 
 var index = 0;
