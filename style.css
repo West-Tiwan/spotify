@@ -134,10 +134,10 @@ i {
 
 #playlist_container{
     overflow: scroll;
+    margin-top: 20px;
     height: 40vh;
     overflow-x: hidden;
     padding: 0px;
-    scroll-behavior: smooth;
 }
 #playlist_container::-webkit-scrollbar{
     display: none;
@@ -146,14 +146,11 @@ i {
     width: auto;
     height: auto;
     border-radius: 10px;
-    margin-top: 10px;
     padding: 10px;
     background-image: linear-gradient(rgba(100, 100, 100, 0.2), transparent);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    overflow: scroll;
-    overflow-x: hidden;
 }
 
 body {
