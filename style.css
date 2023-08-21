@@ -66,6 +66,7 @@ i {
     row-gap: 15px;
     overflow: scroll;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 #lib_title {
@@ -131,6 +132,16 @@ i {
     transition-duration: 0.5s;
 }
 
+#playlist_container{
+    overflow: scroll;
+    height: 40vh;
+    overflow-x: hidden;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+#playlist_container::-webkit-scrollbar{
+    display: none;
+}
 #playlist {
     width: auto;
     height: auto;
