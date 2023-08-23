@@ -8,15 +8,14 @@ class song_info {
   }
 }
 
-const nier_1 = new song_info("Voice of no return", "Square Enix", "Peacefull", 231, "music/nier_1", "music/nier_cover.jpeg");
-const nier_2 = new song_info("Weight of the world", "Square Enix", "Peacefull", 365, "music/nier_2", "music/nier_cover.jpeg");
-const nier_3 = new song_info("Sound of the end", "Square Enix", "Peacefull", 347, "music/nier_3", "music/nier_cover.jpeg");
-const emils_shop = new song_info("Emil's shop", "Square Enix", "Peacefull", 351, "music/emils_shop", "music/nier_cover.jpeg");
+const nier_1 = new song_info("Voice of no return", "Square Enix", "Peacefull", 231, "music/nier_1.mpeg", "music/nier_cover.jpeg");
+const nier_2 = new song_info("Weight of the world", "Square Enix", "Peacefull", 365, "music/nier_2.mpeg", "music/nier_cover.jpeg");
+const nier_3 = new song_info("Sound of the end", "Square Enix", "Peacefull", 347, "music/nier_3.mpeg", "music/nier_cover.jpeg");
+const emils_shop = new song_info("Emil's shop", "Square Enix", "Peacefull", 351, "music/emils_shop.mpeg", "music/nier_cover.jpeg");
 var songs = [nier_1, nier_2, nier_3, emils_shop];
-
 var index = 0;
 var current_song = songs[index];
-
+var song_sauce = [];
 function formatDuration(a) {
   const minutes = Math.floor(a.length_of_song / 60);
   const seconds = a.length_of_song % 60;
@@ -32,15 +31,23 @@ function update_playelist() {
   document.querySelector("#playlist").innerHTML = playlist;
 }
 
+function playPause(){
+  song_sauce = `<audio src="${current_song.sauce}" id="play_song"></audio>`;
+  console.log(song_sauce);
+  document.getElementById("play_song").play;
+}
+
 const current_playing_name = document.querySelector(".current_info_name");
 
 function change_song_button_forward() {
   index = (index + 1) % (songs.length);
   current_song_name();
+  playPause();
 }
 function change_song_button_backward() {
   index = (index - 1 + songs.length) % (songs.length);
   current_song_name();
+  playPause();
 
 }
 function current_song_name() {
