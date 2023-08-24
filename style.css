@@ -168,7 +168,6 @@ i {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    overflow: hidden;
 }
 
 #playlist::-webkit-scrollbar{
